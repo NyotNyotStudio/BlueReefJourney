@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6869052285566789481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6999012279550575064, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3828684286071010667, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2103472999105090976, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1885462174542076475, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -865988107398703224, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -702749339475042731, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 194396036759642542, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 690546301302064698, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Name
+      value: shark
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190224612030416500, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845473359725610304, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890837090564633840, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121391691274643841, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993198813852427224, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037858782645499537, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201662369584427304, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6158863974278269563}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8377421459882014563}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7261167289487941786}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4838814564682534280}
+  m_SourcePrefab: {fileID: 100100000, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+--- !u!1 &6022068586322205240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+  m_PrefabInstance: {fileID: 6869052285566789481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6158863974278269563
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022068586322205240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9a70fad1268939459ef791520c8da3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &8377421459882014563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022068586322205240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9157257, y: 2.4043174, z: 6.7452974}
+  m_Center: {x: 0.15867233, y: 0.8360746, z: 0.38464975}
+--- !u!114 &7261167289487941786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022068586322205240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab39d369f4eae6c47833ea9bfa9b390e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Great White Shark
+  description: Mereka bisa hidup dari permukaan sampai kedalaman 1.200 meter. Dengan
+    panjang tubuh bisa lebih dari 6 meter, hiu putih memakan ikan, anjing laut, dan
+    kadang lumba-lumba. Mereka bisa hidup sampai 70 tahun. Yang keren (dan agak seram),
+    hiu putih bisa mencium setetes darah di laut yang sangat luas. Hebat sekali insting
+    berburu mereka!
+  image: {fileID: 21300000, guid: 6e303d377eb9d29479972061216e8090, type: 3}
+--- !u!114 &4838814564682534280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022068586322205240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5

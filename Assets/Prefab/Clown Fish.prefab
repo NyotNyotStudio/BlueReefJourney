@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9216471398010957320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_Name
+      value: Clown Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4653070429152939417}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3352275923731915484}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6871983856200649567}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2334625875671342521}
+  m_SourcePrefab: {fileID: 100100000, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+--- !u!1 &8297339387502433113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 72184c3e718792544a91a2fb74d6013c, type: 3}
+  m_PrefabInstance: {fileID: 9216471398010957320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4653070429152939417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297339387502433113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab39d369f4eae6c47833ea9bfa9b390e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Clown Fish
+  description: "Hidup di terumbu karang dangkal dengan kedalaman 1\u201350 meter.
+    Mereka memakan plankton, alga, dan sisa makanan kecil di sekitar anemon laut.
+    Uniknya, clownfish kebal terhadap racun anemon, sehingga bisa tinggal aman di
+    dalamnya. Fakta menarik lainnya, clownfish bisa berganti kelamin bila betinanya
+    mati, agar kelompok tetap seimbang."
+  image: {fileID: 21300000, guid: 78d79aee087b1624986d729b67ac0bdc, type: 3}
+--- !u!65 &3352275923731915484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297339387502433113}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.50353724, y: 0.57976216, z: 0.92384565}
+  m_Center: {x: 0.050720073, y: 0.06452182, z: -0.14564675}
+--- !u!95 &6871983856200649567
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297339387502433113}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d61844a702f874140860f78eb627050f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2334625875671342521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297339387502433113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013955d1d1a68945a0a1b64a60cf981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 3
+  reachThreshold: 0.5
