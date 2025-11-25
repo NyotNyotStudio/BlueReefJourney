@@ -16,10 +16,16 @@ public class SubmarineController : MonoBehaviour
     public float targetDepth = 0f;
     public float depthStabilizationSpeed = 2f;
 
+    [Header("Boundary Settings")]
+    public Transform boundaryBox;
+    public float boundaryPadding = 1f;
+
     private Rigidbody rb;
     private float moveInput;
     private float rotationInput;
     private float verticalInput;
+    private Vector3 minBounds;
+    private Vector3 maxBounds;
 
     void Start()
     {
@@ -33,7 +39,38 @@ public class SubmarineController : MonoBehaviour
         rb.drag = waterDrag;
         rb.useGravity = false;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+        if (boundaryBox == null)
+        {
+            GameObject collusion = GameObject.Find("Collusion");
+            if (collusion != null)
+            {
+                boundaryBox = collusion.transform;
+            }
+        }
+
+        CalculateBounds();
+    }
+
+    void CalculateBounds()
+    {
+        if (boundaryBox != null)
+        {
+            Vector3 scale = boundaryBox.localScale;
+            Vector3 position = boundaryBox.position;
+
+            minBounds = new Vector3(
+                position.x - (scale.x / 2f) + boundaryPadding,
+                position.y - (scale.y / 2f) + boundaryPadding,
+                position.z - (scale.z / 2f) + boundaryPadding
+            );
+
+            maxBounds = new Vector3(
+                position.x + (scale.x / 2f) - boundaryPadding,
+                position.y + (scale.y / 2f) - boundaryPadding,
+                position.z + (scale.z / 2f) - boundaryPadding
+            );
+        }
     }
 
     void Update()
@@ -60,13 +97,21 @@ public class SubmarineController : MonoBehaviour
         HandleRotation();
         HandleVerticalMovement();
         HandleBuoyancy();
+        ClampToBoundary();
     }
 
     void HandleMovement()
     {
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? boostSpeed : moveSpeed;
-        Vector3 forwardMovement = transform.forward * moveInput * currentSpeed;
-        rb.velocity = new Vector3(forwardMovement.x, rb.velocity.y, forwardMovement.z);
+        if (moveInput != 0)
+        {
+            float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? boostSpeed : moveSpeed;
+            Vector3 movement = transform.right * moveInput * currentSpeed;
+            rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.z);
+        }
+        else
+        {
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        }
     }
 
     void HandleRotation()
@@ -95,6 +140,35 @@ public class SubmarineController : MonoBehaviour
             float depthDifference = targetDepth - transform.position.y;
             float stabilizationForce = depthDifference * depthStabilizationSpeed;
             rb.velocity = new Vector3(rb.velocity.x, Mathf.Lerp(rb.velocity.y, stabilizationForce, Time.fixedDeltaTime * 5f), rb.velocity.z);
+        }
+    }
+
+    void ClampToBoundary()
+    {
+        if (boundaryBox == null) return;
+
+        Vector3 clampedPosition = transform.position;
+
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, minBounds.x, maxBounds.x);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, minBounds.y, maxBounds.y);
+        clampedPosition.z = Mathf.Clamp(clampedPosition.z, minBounds.z, maxBounds.z);
+
+        if (transform.position != clampedPosition)
+        {
+            transform.position = clampedPosition;
+
+            if (transform.position.x == minBounds.x || transform.position.x == maxBounds.x)
+            {
+                rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
+            }
+            if (transform.position.y == minBounds.y || transform.position.y == maxBounds.y)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            }
+            if (transform.position.z == minBounds.z || transform.position.z == maxBounds.z)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
+            }
         }
     }
 }
