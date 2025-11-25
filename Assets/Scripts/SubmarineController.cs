@@ -18,7 +18,9 @@ public class SubmarineController : MonoBehaviour
 
     [Header("Boundary Settings")]
     public Transform boundaryBox;
+    public Terrain oceanSand;
     public float boundaryPadding = 1f;
+    public float terrainHeightOffset = 0f;
 
     private Rigidbody rb;
     private float moveInput;
@@ -46,6 +48,15 @@ public class SubmarineController : MonoBehaviour
             if (collusion != null)
             {
                 boundaryBox = collusion.transform;
+            }
+        }
+
+        if (oceanSand == null)
+        {
+            GameObject sand = GameObject.Find("OceanSand");
+            if (sand != null)
+            {
+                oceanSand = sand.GetComponent<Terrain>();
             }
         }
 
@@ -143,6 +154,26 @@ public class SubmarineController : MonoBehaviour
         }
     }
 
+    float GetTerrainHeightAtPosition(Vector3 position)
+    {
+        if (oceanSand == null)
+            return minBounds.y;
+
+        Vector3 terrainPos = oceanSand.transform.position;
+        TerrainData terrainData = oceanSand.terrainData;
+
+        Vector3 localPos = position - terrainPos;
+
+        float normalizedX = Mathf.Clamp01(localPos.x / terrainData.size.x);
+        float normalizedZ = Mathf.Clamp01(localPos.z / terrainData.size.z);
+
+        float height = terrainData.GetInterpolatedHeight(normalizedX, normalizedZ);
+
+        float worldHeight = terrainPos.y + height;
+
+        return worldHeight + terrainHeightOffset;
+    }
+
     void ClampToBoundary()
     {
         if (boundaryBox == null) return;
@@ -150,8 +181,11 @@ public class SubmarineController : MonoBehaviour
         Vector3 clampedPosition = transform.position;
 
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, minBounds.x, maxBounds.x);
-        clampedPosition.y = Mathf.Clamp(clampedPosition.y, minBounds.y, maxBounds.y);
         clampedPosition.z = Mathf.Clamp(clampedPosition.z, minBounds.z, maxBounds.z);
+
+        float terrainHeightAtPosition = GetTerrainHeightAtPosition(clampedPosition);
+
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, terrainHeightAtPosition, maxBounds.y);
 
         if (transform.position != clampedPosition)
         {
@@ -161,9 +195,10 @@ public class SubmarineController : MonoBehaviour
             {
                 rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
             }
-            if (transform.position.y == minBounds.y || transform.position.y == maxBounds.y)
+            if (transform.position.y <= terrainHeightAtPosition || transform.position.y == maxBounds.y)
             {
                 rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+                targetDepth = transform.position.y;
             }
             if (transform.position.z == minBounds.z || transform.position.z == maxBounds.z)
             {

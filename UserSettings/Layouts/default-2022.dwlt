@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Model
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -365,30 +365,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 87
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Model
   m_LastFoldersGridSize: 87
   m_LastProjectPath: C:\Users\Ndus\Documents\GitHub\BlueReefJourney
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 145b0000
-    m_LastClickedID: 23316
-    m_ExpandedIDs: 000000001c5b0000385b0000485b0000e6610000e8610000ea610000ec61000000ca9a3b
+    m_SelectedIDs: 0c5f0000
+    m_LastClickedID: 24332
+    m_ExpandedIDs: 000000007a5e00007c5e0000805e0000825e0000845e0000865e00000c5f00007a600000e461000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: YughuesFreeSandMaterials
+      m_OriginalName: YughuesFreeSandMaterials
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 24698
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -402,7 +402,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c5b0000385b0000485b0000e6610000e8610000ea610000ec610000
+    m_ExpandedIDs: 000000007a5e00007c5e00007e5e0000805e0000825e0000845e0000865e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -446,7 +446,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -542,23 +542,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2c600000
-      m_LastClickedID: 24620
-      m_ExpandedIDs: aceaffff
+      m_SelectedIDs: f492feff
+      m_LastClickedID: -93452
+      m_ExpandedIDs: 4ec8ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Submarine
-        m_OriginalName: Submarine
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 24668
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -924,9 +924,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -292.9631, y: -73.33888, z: -219.04031}
+    m_Target: {x: -188.14809, y: 77.35703, z: -138.64056}
     speed: 2
-    m_Value: {x: -292.9631, y: -73.33888, z: -219.04031}
+    m_Value: {x: -188.14809, y: 77.35703, z: -138.64056}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -972,20 +972,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.07969404, y: 0.8690712, z: -0.14904319, w: -0.46512392}
+    m_Target: {x: -0.040957164, y: -0.35165235, z: 0.015527588, w: -0.93524754}
     speed: 2
-    m_Value: {x: -0.07946284, y: 0.8696853, z: -0.14914839, w: -0.46377572}
+    m_Value: {x: -0.04095172, y: -0.35160562, z: 0.0155255245, w: -0.93512326}
   m_Size:
-    m_Target: 362.4914
+    m_Target: 2.6656823
     speed: 2
-    m_Value: 362.4914
+    m_Value: 2.6656823
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 2
-    m_SpeedNormalized: 1
+    m_Speed: 1.7601203
+    m_SpeedNormalized: 0.8800001
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -996,7 +996,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.29441437, y: -0.6393756, z: 0.64826727, w: 0.29035354}
+  m_LastSceneViewRotation: {x: -0.0132658845, y: 0.70852935, z: -0.70557916, w: -0.013459255}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
