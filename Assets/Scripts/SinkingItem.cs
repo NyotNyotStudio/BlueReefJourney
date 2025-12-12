@@ -4,56 +4,89 @@ using Random = UnityEngine.Random;
 
 public class SinkingItem : MonoBehaviour
 {
+    [Header("Movement Settings")]
     [SerializeField] private float sinkSpeed = 2f;
-    [SerializeField] private float driftSpeed = 0.5f;
-    [SerializeField] private float rotationSpeed = 30f;
-    [SerializeField] private LayerMask terrainLayer;
-    [SerializeField] private float hoverHeight = 5f;
+    [SerializeField] private float driftIntensity = 1f;
+    [SerializeField] private float tumbleSpeed = 40f;
 
-    private float driftOffset;
+    [Header("Ground Detection")]
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float hoverHeight = 0.5f;
+    [SerializeField] private float landingSmoothing = 0.2f;
+    [SerializeField] private bool alignToSlope = true;
+
+    [Header("Optional Optimization")]
+    [SerializeField] private Terrain targetTerrain;
+
+    private float _currentYVelocity;
+    private float _noiseOffset;
+    private Vector3 _startScale;
 
     private void Start()
     {
-        driftOffset = Random.Range(0f, 100f);
+        _noiseOffset = Random.Range(0f, 1000f);
+        _startScale = transform.localScale;
     }
 
     private void Update()
     {
-        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        HandleSinkingAndLanding();
+    }
 
-        Vector3 currentPosition = transform.position;
-        float newY = currentPosition.y;
+    private void HandleSinkingAndLanding()
+    {
+        Vector3 currentPos = transform.position;
+        float groundY = GetGroundHeight(currentPos, out Vector3 groundNormal);
+        float targetY = groundY + hoverHeight;
 
-        if (Physics.Raycast(currentPosition + Vector3.up * 50f, Vector3.down, out RaycastHit hit, 200f, terrainLayer))
+        float noiseX = (Mathf.PerlinNoise(Time.time * 0.5f, _noiseOffset) - 0.5f) * driftIntensity;
+        float noiseZ = (Mathf.PerlinNoise(_noiseOffset, Time.time * 0.5f) - 0.5f) * driftIntensity;
+
+        if (currentPos.y > targetY + 0.1f)
         {
-            float targetY = hit.point.y + hoverHeight;
+            float newY = currentPos.y - (sinkSpeed * Time.deltaTime);
 
-            if (currentPosition.y > targetY)
-            {
-                newY -= sinkSpeed * Time.deltaTime;
+            transform.position = new Vector3(currentPos.x + (noiseX * Time.deltaTime), newY, currentPos.z + (noiseZ * Time.deltaTime));
 
-                float driftX = Mathf.Sin(Time.time + driftOffset) * driftSpeed * Time.deltaTime;
-                float driftZ = Mathf.Cos(Time.time * 0.8f + driftOffset) * driftSpeed * Time.deltaTime;
-
-                currentPosition.x += driftX;
-                currentPosition.z += driftZ;
-
-                if (newY < targetY)
-                {
-                    newY = targetY;
-                }
-            }
-            else
-            {
-                newY = targetY;
-                transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
-            }
+            transform.Rotate(Vector3.up * tumbleSpeed * Time.deltaTime + Vector3.right * (tumbleSpeed * 0.5f) * Time.deltaTime);
         }
         else
         {
-            newY -= sinkSpeed * Time.deltaTime;
+            float newY = Mathf.SmoothDamp(currentPos.y, targetY, ref _currentYVelocity, landingSmoothing);
+
+            float bobbing = Mathf.Sin(Time.time * 1.5f) * 0.05f;
+            newY += bobbing * Time.deltaTime;
+
+            transform.position = new Vector3(currentPos.x + (noiseX * Time.deltaTime * 0.2f), newY, currentPos.z + (noiseZ * Time.deltaTime * 0.2f));
+
+            if (alignToSlope)
+            {
+                Quaternion targetRotation = Quaternion.FromToRotation(transform.up, groundNormal) * transform.rotation;
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2f);
+            }
+        }
+    }
+
+    private float GetGroundHeight(Vector3 pos, out Vector3 normal)
+    {
+        normal = Vector3.up;
+        float resultY = -100f;
+
+        Ray ray = new Ray(pos + Vector3.up * 10f, Vector3.down);
+        if (Physics.Raycast(ray, out RaycastHit hit, 500f, groundLayer))
+        {
+            resultY = hit.point.y;
+            normal = hit.normal;
+        }
+        else if (targetTerrain != null)
+        {
+            resultY = targetTerrain.SampleHeight(pos) + targetTerrain.transform.position.y;
+            normal = targetTerrain.terrainData.GetInterpolatedNormal(
+                (pos.x - targetTerrain.transform.position.x) / targetTerrain.terrainData.size.x,
+                (pos.z - targetTerrain.transform.position.z) / targetTerrain.terrainData.size.z
+            );
         }
 
-        transform.position = new Vector3(currentPosition.x, newY, currentPosition.z);
+        return resultY;
     }
 }

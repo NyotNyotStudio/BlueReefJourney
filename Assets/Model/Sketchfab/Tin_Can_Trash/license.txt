@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tin Can Damaged
+* source:	https://sketchfab.com/3d-models/tin-can-damaged-9d26645f9f29493790b842d741b8e5a2
+* author:	Remie07 (https://sketchfab.com/Remie07)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tin Can Damaged" (https://sketchfab.com/3d-models/tin-can-damaged-9d26645f9f29493790b842d741b8e5a2) by Remie07 (https://sketchfab.com/Remie07) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
