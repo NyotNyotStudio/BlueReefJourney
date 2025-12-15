@@ -90,12 +90,12 @@ public class SubmarineController : MonoBehaviour
         rotationInput = Input.GetAxis("Horizontal");
 
         verticalInput = 0f;
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             verticalInput = 1f;
             targetDepth = transform.position.y;
         }
-        else if (Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.Space))
         {
             verticalInput = -1f;
             targetDepth = transform.position.y;

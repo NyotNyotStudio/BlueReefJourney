@@ -19,6 +19,7 @@ public class UniversalSpawner : MonoBehaviour
     [SerializeField] private GameObject[] prefabs;
     [SerializeField] private float notFoundThreshold = 5f;
     [SerializeField] private float panicSpawnMultiplier = 0.3f;
+    [SerializeField] private float seaCreatureLifetime = 10f;
 
     private float _lowPopulationTimer = 0f;
     private List<GameObject> _spawnedObjects = new List<GameObject>();
@@ -92,6 +93,11 @@ public class UniversalSpawner : MonoBehaviour
         {
             GameObject newObj = Instantiate(prefabToSpawn, spawnPos, Random.rotation);
             _spawnedObjects.Add(newObj);
+
+            if (spawnerType == SpawnerType.SeaCreature)
+            {
+                Destroy(newObj, seaCreatureLifetime);
+            }
         }
     }
 

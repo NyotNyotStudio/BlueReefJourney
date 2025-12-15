@@ -362,6 +362,7 @@
 -analyzer:"D:/Dev/Unity/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Dev/Unity/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/EnvironmentGenerator.cs"
+"Assets/Scripts/FishAI.cs"
 "Assets/Scripts/SinkingItem.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/SubmarineCameras.cs"
