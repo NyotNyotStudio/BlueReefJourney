@@ -77,6 +77,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2171767265709843113}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7878473911864052285}
   m_SourcePrefab: {fileID: 100100000, guid: ecaceb4031b48ac49adac708dfb05fe8, type: 3}
 --- !u!1 &6587046411857271659 stripped
 GameObject:
@@ -151,3 +154,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7878473911864052285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587046411857271659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Sea Turtle
+  description: Si penjelajah samudra. Mereka bisa menyelam sampai 300 meter dan berenang
+    ribuan kilometer melintasi laut hangat. Penyu ada yang suka makan rumput laut,
+    ada juga yang doyan ubur-ubur atau kepiting. Ukurannya bisa sebesar manusia dewasa,
+    bahkan lebih besar! Penyu bisa hidup lebih dari 100 tahun. Fakta uniknya, bayi
+    penyu yang baru menetas langsung berlari ke laut, mengikuti cahaya bulan sebagai
+    petunjuk jalan.
+  image: {fileID: 21300000, guid: b0174452d7581c14dae37872b33febf1, type: 3}

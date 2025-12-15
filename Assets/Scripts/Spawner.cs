@@ -23,10 +23,15 @@ public class UniversalSpawner : MonoBehaviour
 
     private float _lowPopulationTimer = 0f;
     private List<GameObject> _spawnedObjects = new List<GameObject>();
+    private UIManager _uiManager;
 
     private void Start()
     {
         if (spawnArea == null || prefabs == null || prefabs.Length == 0) return;
+
+        _uiManager = UIManager.Instance;
+        if (_uiManager == null) _uiManager = FindObjectOfType<UIManager>();
+
         StartCoroutine(SpawnRoutine());
     }
 
@@ -34,6 +39,14 @@ public class UniversalSpawner : MonoBehaviour
     {
         while (true)
         {
+            if (spawnerType == SpawnerType.Trash && _uiManager != null)
+            {
+                if (_uiManager.IsJunkComplete())
+                {
+                    yield break;
+                }
+            }
+
             int currentCount = CleanAndCountObjects();
             float waitTime = baseSpawnInterval;
 
@@ -82,10 +95,13 @@ public class UniversalSpawner : MonoBehaviour
                     prefabToSpawn = prefabs[0];
                 break;
 
-            case SpawnerType.SeaCreature:
             case SpawnerType.Trash:
                 if (prefabs.Length > 0)
                     prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
+                break;
+
+            case SpawnerType.SeaCreature:
+                prefabToSpawn = GetUnscannedCreaturePrefab();
                 break;
         }
 
@@ -99,6 +115,31 @@ public class UniversalSpawner : MonoBehaviour
                 Destroy(newObj, seaCreatureLifetime);
             }
         }
+    }
+
+    private GameObject GetUnscannedCreaturePrefab()
+    {
+        if (prefabs.Length == 0) return null;
+        if (_uiManager == null) return prefabs[Random.Range(0, prefabs.Length)];
+
+        List<GameObject> unscannedList = new List<GameObject>();
+
+        foreach (GameObject prefab in prefabs)
+        {
+            FishInfo info = prefab.GetComponent<FishInfo>();
+
+            if (info != null && !_uiManager.IsFishScanned(info.creatureName))
+            {
+                unscannedList.Add(prefab);
+            }
+        }
+
+        if (unscannedList.Count > 0)
+        {
+            return unscannedList[Random.Range(0, unscannedList.Count)];
+        }
+
+        return prefabs[Random.Range(0, prefabs.Length)];
     }
 
     private int CleanAndCountObjects()

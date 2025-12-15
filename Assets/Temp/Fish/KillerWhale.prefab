@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3277749120515640596}
   - component: {fileID: 676007318842550621}
   - component: {fileID: 4317261761768023100}
+  - component: {fileID: 286809112185056673}
   m_Layer: 0
   m_Name: KillerWhale
   m_TagString: Untagged
@@ -103,6 +104,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &286809112185056673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265425924652563968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Killer Whale
+  description: Berenang dari permukaan hingga kedalaman 1.000 meter. Mereka adalah
+    predator puncak, memakan ikan, anjing laut, hingga paus besar. Meski sering disebut
+    paus, orca sebenarnya anggota terbesar dari keluarga lumba-lumba. Mereka berburu
+    dalam kelompok yang disebut pod, menggunakan strategi kerja sama yang rumit.
+  image: {fileID: 21300000, guid: c6907b8f81c89fc42b06878d902d6190, type: 3}
 --- !u!1001 &6438341041812773512
 PrefabInstance:
   m_ObjectHideFlags: 0

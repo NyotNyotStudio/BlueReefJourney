@@ -77,6 +77,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5440594999371856466}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8315780787356861753}
   m_SourcePrefab: {fileID: 100100000, guid: 23cdbd9a53a782f48b2a5f56f79e1843, type: 3}
 --- !u!1 &7368964237670429502 stripped
 GameObject:
@@ -151,3 +154,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-8315780787356861753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7368964237670429502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Angler Fish
+  description: "Ikan laut dalam yang hidup jauh di bawah permukaan laut, sekitar
+    200 sampai 2.000 meter. Tempat itu sangat gelap, jadi angler fish punya \u201Clampu\u201D
+    di kepalanya untuk menarik ikan kecil, udang, dan cumi-cumi. Betina bisa tumbuh
+    sampai 30 cm, sedangkan jantan jauh lebih kecil dan sering menempel di tubuh
+    betina! Seru ya, seperti punya \u201Cpasangan menempel\u201D selamanya."
+  image: {fileID: 21300000, guid: 3ef1bf925a7fd864ab0b6840a3842b86, type: 3}

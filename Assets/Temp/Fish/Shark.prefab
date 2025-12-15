@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5655082365783962784}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1737377375333944569}
   m_SourcePrefab: {fileID: 100100000, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
 --- !u!1 &270284678901574376 stripped
 GameObject:
@@ -155,3 +158,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1737377375333944569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270284678901574376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Great White Shark
+  description: Mereka bisa hidup dari permukaan sampai kedalaman 1.200 meter. Dengan
+    panjang tubuh bisa lebih dari 6 meter, hiu putih memakan ikan, anjing laut, dan
+    kadang lumba-lumba. Mereka bisa hidup sampai 70 tahun. Yang keren (dan agak seram),
+    hiu putih bisa mencium setetes darah di laut yang sangat luas. Hebat sekali insting
+    berburu mereka!
+  image: {fileID: 21300000, guid: 6e303d377eb9d29479972061216e8090, type: 3}
