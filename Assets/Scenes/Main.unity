@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnerType: 2
   spawnArea: {fileID: 1324601695}
-  baseSpawnInterval: 2
+  baseSpawnInterval: 15
   maxItems: 10
   prefabs:
   - {fileID: 2039669244463751478, guid: fa5b56ccc80974c4a86c60fcd7f3001a, type: 3}
