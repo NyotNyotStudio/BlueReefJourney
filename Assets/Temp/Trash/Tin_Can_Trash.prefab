@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1365374918055199289}
   - component: {fileID: 260154889412084441}
   - component: {fileID: 6755813335889072292}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Can Damaged_Tin Can_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6165800527307665235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6722252552563599255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 85f6955e608541a680d923329932297f.fbx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6100141786417081526}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3166708678854407833}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Can Damaged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,9 +221,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7289382896747221746}
   - component: {fileID: 3403696684799575615}
-  m_Layer: 0
+  - component: {fileID: 5543033589984744188}
+  m_Layer: 7
   m_Name: Tin_Can_Trash
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,13 +257,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99221d17fbf82f6449480330c0c4a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinkSpeed: 1
-  driftIntensity: 1
-  tumbleSpeed: 40
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hoverHeight: 5
   landingSmoothing: 0.2
   alignToSlope: 1
-  targetTerrain: {fileID: 0}
+  sinkSpeed: 1
+  driftIntensity: 1
+  tumbleSpeed: 40
+--- !u!65 &5543033589984744188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610062736667473798}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0.1, z: 0}

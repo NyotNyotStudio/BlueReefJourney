@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7782328469846640535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1207034948850315405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 73e3f94e1eb44673891a9122cab9d44e.fbx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,9 +74,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7172051822751563701}
   - component: {fileID: 8965644420900826904}
-  m_Layer: 0
+  - component: {fileID: -429448592647730182}
+  m_Layer: 7
   m_Name: Cigar
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,16 +110,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99221d17fbf82f6449480330c0c4a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinkSpeed: 1
-  driftIntensity: 1
-  tumbleSpeed: 40
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hoverHeight: 5
   landingSmoothing: 0.2
   alignToSlope: 1
-  targetTerrain: {fileID: 0}
+  sinkSpeed: 1
+  driftIntensity: 1
+  tumbleSpeed: 40
+--- !u!65 &-429448592647730182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584316985226870265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &3831608531489328735
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +151,7 @@ GameObject:
   - component: {fileID: 135745899900244922}
   - component: {fileID: 7954832629540675652}
   - component: {fileID: 6387659167069017670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: caixa_low_lambert1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6429082164279305829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: caixa_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2770239873742773445}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

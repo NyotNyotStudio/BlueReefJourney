@@ -26,7 +26,7 @@ public class FishAI : MonoBehaviour
         if (rb != null)
         {
             rb.useGravity = false;
-            rb.isKinematic = false;
+            rb.isKinematic = true;
             rb.drag = 1f;
             rb.angularDrag = 1f;
         }

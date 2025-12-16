@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1586546368992880753
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -192.8305
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 159.2266
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      propertyPath: m_Name
+      value: DogFish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1043345017628078525}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7548555343771416024}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 277101753694476172}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5613658369496130842}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4974359060827429458}
+  m_SourcePrefab: {fileID: 100100000, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+--- !u!1 &1929196872842122528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dac7e2b5e0c31044499fc67860304cb6, type: 3}
+  m_PrefabInstance: {fileID: 1586546368992880753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1043345017628078525
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929196872842122528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f3af47d504053949a8c7a40e5c6e4e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7548555343771416024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929196872842122528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bb9c5f8e29417428bda4c8afbbee18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swimSpeed: 3
+  turnSpeed: 2
+  driftSpeed: 0.5
+  wiggleSpeed: 8
+  wiggleMagnitude: 0.4
+  waitTimeRange: {x: 2, y: 5}
+  boundaryObject: {fileID: 6501432490472284637, guid: 4aa67a23e5ed86c47b1b97593769aa6e, type: 3}
+  minHeight: 20
+--- !u!54 &277101753694476172
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929196872842122528}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5613658369496130842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929196872842122528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Dog Fish
+  description: "Sering ditemukan di kedalaman 50\u2013200 meter, bahkan bisa sampai
+    900 meter. Mereka memakan ikan kecil, cumi, dan udang. Hiu ini punya duri beracun
+    kecil di dekat sirip untuk melindungi diri. Disebut \u201Cdogfish\u201D karena
+    kebiasaannya berburu dalam kelompok besar, mirip kawanan anjing."
+  image: {fileID: 21300000, guid: 3d0bd040fc1a22c4aa4992c0fbbb90be, type: 3}
+--- !u!65 &4974359060827429458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929196872842122528}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1, z: 5}
+  m_Center: {x: 0.15, y: 0, z: -0.5}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3923942312760558592}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GLTF_SceneRootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452375128114197668}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880030900515796565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 903622957848625695}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trash_Bag_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,9 +138,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4607815516798239510}
   - component: {fileID: 7044295945610256028}
-  m_Layer: 0
+  - component: {fileID: 2089573281697357389}
+  m_Layer: 7
   m_Name: TrashBag
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,16 +174,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99221d17fbf82f6449480330c0c4a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinkSpeed: 1
-  driftIntensity: 1
-  tumbleSpeed: 40
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hoverHeight: 5
   landingSmoothing: 0.2
   alignToSlope: 1
-  targetTerrain: {fileID: 0}
+  sinkSpeed: 1
+  driftIntensity: 1
+  tumbleSpeed: 40
+--- !u!65 &2089573281697357389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4609559086224071831}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 35}
+  m_Center: {x: -3.5, y: 25, z: -20}
 --- !u!1 &8326621235323200339
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +215,7 @@ GameObject:
   - component: {fileID: 8142506806419848886}
   - component: {fileID: 3609802612901828146}
   - component: {fileID: 6650931584541499768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Object_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

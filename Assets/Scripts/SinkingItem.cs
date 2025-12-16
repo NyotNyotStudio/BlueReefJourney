@@ -1,31 +1,39 @@
-using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-public class SinkingItem : MonoBehaviour
+public class FloatingObject : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    [SerializeField] private float sinkSpeed = 2f;
-    [SerializeField] private float driftIntensity = 1f;
-    [SerializeField] private float tumbleSpeed = 40f;
-
     [Header("Ground Detection")]
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private float hoverHeight = 0.5f;
+    [SerializeField] private float hoverHeight = 5f;
     [SerializeField] private float landingSmoothing = 0.2f;
     [SerializeField] private bool alignToSlope = true;
 
-    [Header("Optional Optimization")]
-    [SerializeField] private Terrain targetTerrain;
+    [Header("Movement")]
+    [SerializeField] private float sinkSpeed = 2f;
+    [SerializeField] private float driftIntensity = 0.5f;
+    [SerializeField] private float tumbleSpeed = 15f;
 
+    private Terrain targetTerrain;
     private float _currentYVelocity;
     private float _noiseOffset;
-    private Vector3 _startScale;
+    private Collider[] _myColliders;
 
     private void Start()
     {
         _noiseOffset = Random.Range(0f, 1000f);
-        _startScale = transform.localScale;
+        _myColliders = GetComponentsInChildren<Collider>();
+
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.useGravity = false;
+            rb.isKinematic = true;
+        }
+
+        if (targetTerrain == null)
+        {
+            targetTerrain = Terrain.activeTerrain;
+        }
     }
 
     private void Update()
@@ -70,23 +78,52 @@ public class SinkingItem : MonoBehaviour
     private float GetGroundHeight(Vector3 pos, out Vector3 normal)
     {
         normal = Vector3.up;
-        float resultY = -100f;
+        float resultY = -1000f;
+        bool foundGround = false;
 
-        Ray ray = new Ray(pos + Vector3.up * 10f, Vector3.down);
-        if (Physics.Raycast(ray, out RaycastHit hit, 500f, groundLayer))
+        Ray ray = new Ray(pos + Vector3.up * 50f, Vector3.down);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 200f, groundLayer);
+
+        float closestDist = float.MaxValue;
+
+        foreach (var hit in hits)
         {
-            resultY = hit.point.y;
-            normal = hit.normal;
+            if (IsMyCollider(hit.collider)) continue;
+
+            if (hit.distance < closestDist)
+            {
+                resultY = hit.point.y;
+                normal = hit.normal;
+                closestDist = hit.distance;
+                foundGround = true;
+            }
         }
-        else if (targetTerrain != null)
+
+        if (!foundGround && targetTerrain != null)
         {
             resultY = targetTerrain.SampleHeight(pos) + targetTerrain.transform.position.y;
             normal = targetTerrain.terrainData.GetInterpolatedNormal(
                 (pos.x - targetTerrain.transform.position.x) / targetTerrain.terrainData.size.x,
                 (pos.z - targetTerrain.transform.position.z) / targetTerrain.terrainData.size.z
             );
+            foundGround = true;
+        }
+
+        if (!foundGround)
+        {
+            resultY = pos.y - hoverHeight;
         }
 
         return resultY;
+    }
+
+    private bool IsMyCollider(Collider col)
+    {
+        if (_myColliders == null) return false;
+        for (int i = 0; i < _myColliders.Length; i++)
+        {
+            if (_myColliders[i] == col) return true;
+        }
+        return false;
     }
 }

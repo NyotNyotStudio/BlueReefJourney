@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4840629130067047980}
   - component: {fileID: 7984191550982552492}
   - component: {fileID: 8578662130689356698}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Beer_Bottle__0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5050831677110333497}
   - component: {fileID: 3508782450402369725}
-  m_Layer: 0
+  - component: {fileID: -7019462052689872328}
+  m_Layer: 7
   m_Name: Beer
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,16 +129,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99221d17fbf82f6449480330c0c4a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sinkSpeed: 1
-  driftIntensity: 1
-  tumbleSpeed: 40
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hoverHeight: 5
   landingSmoothing: 0.2
   alignToSlope: 1
-  targetTerrain: {fileID: 0}
+  sinkSpeed: 1
+  driftIntensity: 1
+  tumbleSpeed: 40
+--- !u!65 &-7019462052689872328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039669244463751478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2569126643542691969
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8164806978236358669}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Beer_Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 567354718678226377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2820526807977657377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sketchfab_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7537376345578957412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 03fa53592129408f955d3a5896106599.fbx
   m_TagString: Untagged
   m_Icon: {fileID: 0}

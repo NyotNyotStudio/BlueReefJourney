@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4666619407618741802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -186.91214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.0509815
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 164.93492
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      propertyPath: m_Name
+      value: Tuna
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4012201055532953032}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8118199231372380403}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2285597374329417697}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7766122252367988811}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6627227375170486045}
+  m_SourcePrefab: {fileID: 100100000, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+--- !u!1 &5477010954015353723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b297966abd9f4b24c83b1335235248b3, type: 3}
+  m_PrefabInstance: {fileID: 4666619407618741802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4012201055532953032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477010954015353723}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8118199231372380403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477010954015353723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625f9307b5922f0499989d1843fb87bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureName: Tuna
+  description: Sprinter laut sejati. Hidup di laut terbuka sampai kedalaman 500 meter,
+    tuna bisa berenang super cepat, hingga 75 km/jam! Ukurannya bervariasi, ada yang
+    1 meter, ada juga yang bisa tumbuh sampai 4 meter dan berat 700 kg. Tuna suka
+    makan ikan kecil, cumi-cumi, dan udang kecil. Mereka juga terkenal sebagai ikan
+    pengembara, karena bisa melakukan perjalanan ribuan kilometer melintasi samudra.
+  image: {fileID: 21300000, guid: d5882deca4032b04a963ef7f31eb1616, type: 3}
+--- !u!114 &2285597374329417697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477010954015353723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bb9c5f8e29417428bda4c8afbbee18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swimSpeed: 3
+  turnSpeed: 2
+  driftSpeed: 0.5
+  wiggleSpeed: 8
+  wiggleMagnitude: 0.4
+  waitTimeRange: {x: 2, y: 5}
+  boundaryObject: {fileID: 6501432490472284637, guid: 4aa67a23e5ed86c47b1b97593769aa6e, type: 3}
+  minHeight: 20
+--- !u!54 &7766122252367988811
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477010954015353723}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!95 &-6627227375170486045
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477010954015353723}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afdf2adfb5b6ab046a4934d9376a8949, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

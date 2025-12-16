@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: -1256240292973561035}
   - component: {fileID: 3653880282177466348}
   - component: {fileID: -3913363970909796866}
-  m_Layer: 0
+  - component: {fileID: 3471281801080659904}
+  m_Layer: 6
   m_Name: Dolphin
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +124,27 @@ MonoBehaviour:
     Karena bernapas dengan paru-paru, mereka harus sering naik ke permukaan untuk
     menghirup udara."
   image: {fileID: 21300000, guid: be4b265c6567c2142a4b104baa1942d7, type: 3}
+--- !u!65 &3471281801080659904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913424269657736624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8890275084368935870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +153,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7262881204142911263}
     m_Modifications:
+    - target: {fileID: -9016395773758655160, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -183,9 +209,101 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8108085122129792975, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7307597723742177325, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6522695966643703301, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4498288069420927097, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2682637418359526552, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2453051982977489153, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1843205853860946736, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1381204345063731973, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -939687265303691897, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -713306466249552534, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
       propertyPath: m_Name
       value: Dolphin_Animated
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790183945725220954, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2480909740878747892, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342603745549453024, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367667793657289340, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714403491636427401, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819001077394492298, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522942256673239633, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905609870639353253, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679641636787266966, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049607558298639090, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660131201302137362, guid: 3259e0b9e0733d94d9e359f0c6f4a46d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

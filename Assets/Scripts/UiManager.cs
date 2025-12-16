@@ -17,8 +17,14 @@ public class UIManager : MonoBehaviour
     [Header("Progress UI")]
     [SerializeField] private TextMeshProUGUI scannedCountText;
     [SerializeField] private TextMeshProUGUI junkCountText;
-    [SerializeField] private int totalFishTypes = 10;
-    [SerializeField] private int totalJunkItem = 5;
+    [SerializeField] private TextMeshProUGUI levelText;
+
+    [Header("Level Progression Settings")]
+    [SerializeField] private int baseFishTarget = 10;
+    [SerializeField] private int baseJunkTarget = 5;
+    [SerializeField] private int fishIncreasePerLevel = 5;
+    [SerializeField] private int junkIncreasePerLevel = 3;
+    [SerializeField] private int maxLevels = 4;
     [SerializeField] private string winSceneName = "YouWon";
 
     [Header("Sound Effects")]
@@ -31,17 +37,32 @@ public class UIManager : MonoBehaviour
     private HashSet<string> collectedJunk = new HashSet<string>();
     private bool isPanelOpen = false;
 
+    private int currentLevel = 1;
+    private int currentFishTarget;
+    private int currentJunkTarget;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
     }
 
     private void Start()
     {
+        CalculateTargets();
+
         infoPanel.SetActive(false);
+        UpdateLevelUI();
         UpdateScannedText();
         UpdateJunkText();
+    }
+
+    private void CalculateTargets()
+    {
+        currentFishTarget = baseFishTarget + ((currentLevel - 1) * fishIncreasePerLevel);
+        currentJunkTarget = baseJunkTarget + ((currentLevel - 1) * junkIncreasePerLevel);
     }
 
     private void Update()
@@ -55,7 +76,7 @@ public class UIManager : MonoBehaviour
 
     public bool IsJunkComplete()
     {
-        return collectedJunk.Count >= totalJunkItem;
+        return collectedJunk.Count >= currentJunkTarget;
     }
 
     public bool IsFishScanned(string creatureName)
@@ -67,6 +88,8 @@ public class UIManager : MonoBehaviour
     {
         if (creature == null) return;
 
+        if (scannedFish.Contains(creature.creatureName)) return;
+
         nameText.text = creature.creatureName;
         descriptionText.text = creature.description;
         creatureImage.sprite = creature.image;
@@ -76,12 +99,9 @@ public class UIManager : MonoBehaviour
 
         PlaySound(popUpPanelSFX);
 
-        if (!scannedFish.Contains(creature.creatureName))
-        {
-            scannedFish.Add(creature.creatureName);
-            UpdateScannedText();
-            CheckWinCondition();
-        }
+        scannedFish.Add(creature.creatureName);
+        UpdateScannedText();
+        CheckWinCondition();
     }
 
     public void CollectJunk(string junkName)
@@ -104,7 +124,7 @@ public class UIManager : MonoBehaviour
     {
         if (scannedCountText != null)
         {
-            scannedCountText.text = $"{scannedFish.Count}/{totalFishTypes}";
+            scannedCountText.text = $"{scannedFish.Count}/{currentFishTarget}";
         }
     }
 
@@ -112,18 +132,38 @@ public class UIManager : MonoBehaviour
     {
         if (junkCountText != null)
         {
-            junkCountText.text = $"{collectedJunk.Count}/{totalJunkItem}";
+            junkCountText.text = $"{collectedJunk.Count}/{currentJunkTarget}";
+        }
+    }
+
+    private void UpdateLevelUI()
+    {
+        if (levelText != null)
+        {
+            levelText.text = $"Level {currentLevel}";
         }
     }
 
     private void CheckWinCondition()
     {
-        bool allFishFound = scannedFish.Count >= totalFishTypes;
-        bool allJunkFound = collectedJunk.Count >= totalJunkItem;
+        bool allFishFound = scannedFish.Count >= currentFishTarget;
+        bool allJunkFound = collectedJunk.Count >= currentJunkTarget;
 
         if (allFishFound && allJunkFound)
         {
-            SceneManager.LoadScene(winSceneName);
+            if (currentLevel < maxLevels)
+            {
+                currentLevel++;
+                PlayerPrefs.SetInt("CurrentLevel", currentLevel);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("CurrentLevel", 1);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene(winSceneName);
+            }
         }
     }
 

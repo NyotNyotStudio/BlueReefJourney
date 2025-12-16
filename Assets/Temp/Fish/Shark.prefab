@@ -60,13 +60,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6999012279550575064, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -6997733842791713512, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       propertyPath: m_UpdateWhenOffscreen
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3828684286071010667, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2103472999105090976, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1885462174542076475, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -865988107398703224, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -702749339475042731, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 194396036759642542, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 690546301302064698, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       propertyPath: m_Name
       value: Shark
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190224612030416500, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845473359725610304, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890837090564633840, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121391691274643841, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993198813852427224, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037858782645499537, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201662369584427304, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -84,6 +152,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1737377375333944569}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 703145255498341931}
   m_SourcePrefab: {fileID: 100100000, guid: f74f1dc0571d4704dac676609ed32264, type: 3}
 --- !u!1 &270284678901574376 stripped
 GameObject:
@@ -177,3 +248,24 @@ MonoBehaviour:
     hiu putih bisa mencium setetes darah di laut yang sangat luas. Hebat sekali insting
     berburu mereka!
   image: {fileID: 21300000, guid: 6e303d377eb9d29479972061216e8090, type: 3}
+--- !u!65 &703145255498341931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270284678901574376}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 3, z: 7}
+  m_Center: {x: 0, y: 1, z: 0}

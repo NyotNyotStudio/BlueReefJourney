@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class UniversalSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     public enum SpawnerType
     {
