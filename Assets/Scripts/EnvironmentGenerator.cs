@@ -1,9 +1,11 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
 public class EnvironmentSpawner : MonoBehaviour
 {
+    [Header("Settings")]
     [SerializeField] private GameObject[] environmentPrefabs;
     [SerializeField] private Transform spawnParent;
     [SerializeField] private Collider terrainCollider;
@@ -12,44 +14,53 @@ public class EnvironmentSpawner : MonoBehaviour
     [SerializeField] private float minDistance = 5f;
     [SerializeField] private LayerMask terrainLayer;
     [SerializeField] private float heightOffset = -1.0f;
-
     [SerializeField] private bool alignToSlope = true;
 
     private List<Vector3> spawnedPositions = new List<Vector3>();
 
     private void Start()
     {
-        SpawnEnvironment();
+        StartCoroutine(SpawnEnvironmentRoutine());
     }
 
-    [ContextMenu("Spawn Environment")]
-    public void SpawnEnvironment()
+    public IEnumerator SpawnEnvironmentRoutine()
     {
-        if (environmentPrefabs == null || environmentPrefabs.Length == 0) return;
+        if (environmentPrefabs == null || environmentPrefabs.Length == 0) yield break;
 
         if (terrainCollider == null)
         {
-            UnityEngine.Debug.LogError("Terrain Collider belum di-assign!");
-            return;
+            Debug.LogError("Terrain Collider belum di-assign!");
+            yield break;
         }
 
         if (spawnParent == null) spawnParent = transform;
+
+        yield return null;
 
         ClearEnvironment();
         spawnedPositions.Clear();
 
         int objectCount = Random.Range(minObjects, maxObjects + 1);
-        int attempts = 0;
+        int currentSpawned = 0;
+        int totalAttempts = 0;
+        int maxAttempts = objectCount * 50;
 
-        for (int i = 0; i < objectCount && attempts < objectCount * 10; attempts++)
+        while (currentSpawned < objectCount && totalAttempts < maxAttempts)
         {
+            totalAttempts++;
+
             Vector3 pos = GetRandomPosition(out bool hitTerrain, out Vector3 surfaceNormal);
 
             if (hitTerrain && IsPositionValid(pos))
             {
                 SpawnObjectAt(pos, surfaceNormal);
                 spawnedPositions.Add(pos);
-                i++;
+                currentSpawned++;
+            }
+
+            if (totalAttempts % 5 == 0)
+            {
+                yield return null;
             }
         }
     }
@@ -61,7 +72,11 @@ public class EnvironmentSpawner : MonoBehaviour
 
         for (int i = spawnParent.childCount - 1; i >= 0; i--)
         {
-            DestroyImmediate(spawnParent.GetChild(i).gameObject);
+            GameObject obj = spawnParent.GetChild(i).gameObject;
+            if (Application.isPlaying)
+                Destroy(obj);
+            else
+                DestroyImmediate(obj);
         }
         spawnedPositions.Clear();
     }
@@ -70,15 +85,23 @@ public class EnvironmentSpawner : MonoBehaviour
     {
         Bounds bounds = terrainCollider.bounds;
 
+        if (bounds.size == Vector3.zero)
+        {
+            hitTerrain = false;
+            surfaceNormal = Vector3.up;
+            return Vector3.zero;
+        }
+
         float x = Random.Range(bounds.min.x, bounds.max.x);
         float z = Random.Range(bounds.min.z, bounds.max.z);
 
-        Vector3 origin = new Vector3(x, bounds.max.y + 100f, z);
-        Vector3 finalPosition = origin;
-        surfaceNormal = Vector3.up;
-        hitTerrain = false;
+        Vector3 origin = new Vector3(x, bounds.max.y + 200f, z);
 
-        if (Physics.Raycast(origin, Vector3.down, out RaycastHit hit, bounds.size.y + 200f, terrainLayer))
+        hitTerrain = false;
+        surfaceNormal = Vector3.up;
+        Vector3 finalPosition = Vector3.zero;
+
+        if (Physics.Raycast(origin, Vector3.down, out RaycastHit hit, 1000f, terrainLayer))
         {
             finalPosition = hit.point;
             finalPosition.y += heightOffset;
@@ -91,9 +114,11 @@ public class EnvironmentSpawner : MonoBehaviour
 
     private bool IsPositionValid(Vector3 position)
     {
-        foreach (Vector3 spawnedPos in spawnedPositions)
+        float minDistSqr = minDistance * minDistance;
+
+        for (int i = 0; i < spawnedPositions.Count; i++)
         {
-            if (Vector3.Distance(position, spawnedPos) < minDistance)
+            if ((position - spawnedPositions[i]).sqrMagnitude < minDistSqr)
                 return false;
         }
         return true;
