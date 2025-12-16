@@ -723,8 +723,8 @@ MonoBehaviour:
   - {fileID: 8856780233465053781, guid: 3737425050e4b894fb2636a88306139a, type: 3}
   spawnParent: {fileID: 2120819981}
   terrainCollider: {fileID: 2120819982}
-  minObjects: 50
-  maxObjects: 150
+  minObjects: 20
+  maxObjects: 100
   minDistance: 10
   terrainLayer:
     serializedVersion: 2
