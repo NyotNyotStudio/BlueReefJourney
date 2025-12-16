@@ -60,9 +60,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7686609989614500704, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4388680750337458582, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3540272279435206582, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
       propertyPath: m_Name
       value: HammerHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295464275771937363, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905609870639353253, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: 4ea8299d3146d4d4aac9dce043190289, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|c:\\users\\aw4e\\documents\\bluereefjourney\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|c:\\users\\aw4e\\documents\\bluereefjourney\\assets\\scripts\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|c:\\users\\aw4e\\documents\\bluereefjourney\\assets\\scripts\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|c:\\users\\aw4e\\documents\\bluereefjourney\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\assets\\scripts\\submarinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\submarinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\assets\\scripts\\submarinecameras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\submarinecameras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\assets\\scripts\\environmentgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703B5153-74E2-A37A-2002-526399D3B92F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\environmentgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,76 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "Scanner.cs",
+              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Scanner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Scanner.cs",
+              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Scanner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Scanner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T08:02:15.12Z",
+              "WhenOpened": "2025-12-16T09:06:59.156Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameOver.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\GameOver.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameOver.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\GameOver.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameOver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:58:18.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Healthbar.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Healthbar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Healthbar.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Healthbar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Healthbar.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwEQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:39:45.858Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UiManager.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\UiManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UiManager.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\UiManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UiManager.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAiwLAAAAABAAAAAAAAAA==",
+              "Title": "EnvironmentGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\EnvironmentGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnvironmentGenerator.cs",
+              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\EnvironmentGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnvironmentGenerator.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T07:18:02.863Z"
+              "WhenOpened": "2025-12-16T08:20:41.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SubmarineCameras.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\SubmarineCameras.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SubmarineCameras.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\SubmarineCameras.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SubmarineCameras.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
+              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAiwH4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:49:43.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SubmarineController.cs",
-              "DocumentMoniker": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\SubmarineController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SubmarineController.cs",
-              "ToolTip": "C:\\Users\\Aw4e\\Documents\\BlueReefJourney\\Assets\\Scripts\\SubmarineController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SubmarineController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T06:48:59.007Z"
+              "WhenOpened": "2025-12-16T08:20:23.314Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
     <Compile Include="Assets\Scripts\SubmarineCameras.cs" />
+    <Compile Include="Assets\Scripts\Credit.cs" />
     <Compile Include="Assets\Scripts\SinkingItem.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />

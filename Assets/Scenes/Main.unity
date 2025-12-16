@@ -3244,7 +3244,7 @@ MonoBehaviour:
   audioSource: {fileID: 1896395360}
   closePanelSFX: {fileID: 8300000, guid: 05769f69a4ac23b47bd51d03796316d4, type: 3}
   popUpPanelSFX: {fileID: 8300000, guid: 4a81fe2ca9aefc644b69ea0f6b9ba586, type: 3}
-  sfxVolume: 0.5
+  sfxVolume: 0.3
 --- !u!4 &1704437694
 Transform:
   m_ObjectHideFlags: 0
