@@ -61,29 +61,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Healthbar.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabExporter.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabPlugin.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporterWindow.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
     <Compile Include="Assets\Scripts\SubmarineCameras.cs" />
     <Compile Include="Assets\Scripts\Credit.cs" />
     <Compile Include="Assets\Scripts\EnvironmentSpawner.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabLogger.cs" />
     <Compile Include="Assets\Scripts\FishAI.cs" />
     <Compile Include="Assets\Scripts\UiManager.cs" />
     <Compile Include="Assets\Scripts\SubmarineController.cs" />
     <Compile Include="Assets\Scripts\FishInfo.cs" />
     <Compile Include="Assets\Scripts\Scanner.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
     <Compile Include="Assets\Scripts\FloatingObject.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\Resizer.cs" />
-    <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabApi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -95,13 +84,11 @@
     <None Include="Assets\Fonts\Chewy\LICENSE.txt" />
     <None Include="Assets\Crest\Crest\Shaders\Underwater\Resources\UnderwaterEffect.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\AnimWavesSetBaseWaterHeightUsingGeometry.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\GerstnerShared.hlsl" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\FoamAddFromVertCol.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Misc\OceanProxy.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Resources\UpdateShadow.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\AnimWavesAddFromTex.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\FoamAddFromTex.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Underwater\UnderwaterEffectIncludes.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -111,7 +98,6 @@
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\AnimWavesSpectrum.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\DynWavesSphereWaterInteraction.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\AnimWavesSetHeightToGeometry.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\FoamSplineGeometry.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\FlowAddFlowMap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -136,7 +122,6 @@
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\DynWavesSphereWaterInteraction.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\FoamOverride.shader" />
     <None Include="Assets\Crest\Crest\Shaders\ShaderLibrary\Common.hlsl" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\Newtonsoft.Json.dll" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\OceanDepths.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\AnimWavesGerstnerBatchGeometry.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Underwater\UnderwaterShared.hlsl" />
@@ -165,7 +150,6 @@
     <None Include="Assets\Crest\Crest\Shaders\Underwater\UnderwaterMaskHorizonShared.hlsl" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\OceanDepthsCache.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanVertHelpers.hlsl" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\SketchfabPlugin.dll" />
     <None Include="Assets\Crest\Crest\Shaders\Resources\ShapeCombine.compute" />
     <None Include="Assets\Fonts\Bubblegum_Sans\OFL.txt" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\ClipSurfaceRemoveAreaTexture.shader" />
@@ -191,14 +175,12 @@
     <None Include="Assets\Crest\Crest\Shaders\Underwater\UnderwaterMeniscus.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Helpers\BIRP\InputsDriven.hlsl" />
     <None Include="Assets\Crest\Crest\Shaders\OceanSurfaceAlpha.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\Ionic.Zip.Unity.dll" />
     <None Include="Assets\Crest\Crest\Shaders\Resources\ClearToBlack.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Helpers\BIRP\Core.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Crest\Crest\Shaders\OceanEmission.hlsl" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\Resources\AnimWavesGerstner.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFBumpToNormal.shader" />
     <None Include="Assets\Crest\Crest\Shaders\Underwater\Resources\UnderwaterMask.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Crest\Crest\Shaders\OceanInputs\DynWavesAddBump.shader" />
@@ -212,7 +194,6 @@
     <None Include="Assets\Crest\Crest\Shaders\Underwater\UnderwaterEffect.hlsl" />
     <None Include="Assets\Crest\Crest\Shaders\Resources\FFT\FFTBake.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll" />
     <None Include="Assets\Crest\Crest\Shaders\ShaderLibrary\UpdateShadow.hlsl" />
   </ItemGroup>
   <ItemGroup>
@@ -554,18 +535,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="SketchfabPlugin">
-      <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\SketchfabPlugin.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ionic.Zip.Unity">
-      <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\Ionic.Zip.Unity.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="GLTFSerialization">
-      <HintPath>Assets\Sketchfab For Unity\Dependencies\Libraries\GLTFSerialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
