@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnerType: 2
   spawnArea: {fileID: 1324601695}
-  baseSpawnInterval: 20
+  baseSpawnInterval: 2
   maxItems: 10
   prefabs:
   - {fileID: 2039669244463751478, guid: fa5b56ccc80974c4a86c60fcd7f3001a, type: 3}
@@ -3662,7 +3662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  baseBoostDrainSpeed: 30
+  baseBoostDrainSpeed: 5
   gameOverScene: GameOver
   healthText: {fileID: 560181390}
 --- !u!114 &1896395365

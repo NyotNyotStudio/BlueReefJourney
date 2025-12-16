@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
         Trash
     }
 
+    [Header("Settings")]
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private BoxCollider spawnArea;
     [SerializeField] private float baseSpawnInterval = 3f;
@@ -27,27 +28,50 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        if (spawnArea == null || prefabs == null || prefabs.Length == 0) return;
+        if (spawnArea == null)
+        {
+            Debug.LogError($"[Spawner {name}] ERROR: BoxCollider (Spawn Area) Kosong! Assign dulu di Inspector.");
+            return;
+        }
+        if (prefabs == null || prefabs.Length == 0)
+        {
+            Debug.LogError($"[Spawner {name}] ERROR: Prefabs kosong! Masukkan minimal 1 objek.");
+            return;
+        }
 
         _uiManager = UIManager.Instance;
         if (_uiManager == null) _uiManager = FindObjectOfType<UIManager>();
 
+        Debug.Log($"[Spawner {name}] Script Aktif. Mulai spawn dalam 1 detik...");
         StartCoroutine(SpawnRoutine());
     }
 
     private IEnumerator SpawnRoutine()
     {
+        yield return new WaitForSeconds(1f);
+
         while (true)
         {
             if (spawnerType == SpawnerType.Trash && _uiManager != null)
             {
                 if (_uiManager.IsJunkComplete())
                 {
+                    Debug.LogWarning($"[Spawner {name}] STOP: UIManager mendeteksi Junk Complete.");
                     yield break;
                 }
             }
 
             int currentCount = CleanAndCountObjects();
+
+            if (currentCount < maxItems)
+            {
+                SpawnObject();
+            }
+            else
+            {
+                Debug.Log($"[Spawner {name}] Penuh ({currentCount}/{maxItems}). Menunggu slot kosong.");
+            }
+
             float waitTime = baseSpawnInterval;
 
             if (spawnerType == SpawnerType.SeaCreature)
@@ -55,7 +79,6 @@ public class Spawner : MonoBehaviour
                 if (currentCount <= 1)
                 {
                     _lowPopulationTimer += baseSpawnInterval;
-
                     if (_lowPopulationTimer >= notFoundThreshold)
                     {
                         waitTime *= panicSpawnMultiplier;
@@ -67,19 +90,16 @@ public class Spawner : MonoBehaviour
                 }
             }
 
+            waitTime = Mathf.Max(waitTime, 0.5f);
+
             yield return new WaitForSeconds(waitTime);
-
-            currentCount = CleanAndCountObjects();
-
-            if (currentCount < maxItems)
-            {
-                SpawnObject();
-            }
         }
     }
 
     private void SpawnObject()
     {
+        if (spawnArea == null) return;
+
         Bounds bounds = spawnArea.bounds;
         float x = Random.Range(bounds.min.x, bounds.max.x);
         float y = Random.Range(bounds.min.y, bounds.max.y);
@@ -91,15 +111,11 @@ public class Spawner : MonoBehaviour
         switch (spawnerType)
         {
             case SpawnerType.Battery:
-                if (prefabs.Length > 0)
-                    prefabToSpawn = prefabs[0];
+                if (prefabs.Length > 0) prefabToSpawn = prefabs[0];
                 break;
-
             case SpawnerType.Trash:
-                if (prefabs.Length > 0)
-                    prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
+                if (prefabs.Length > 0) prefabToSpawn = prefabs[Random.Range(0, prefabs.Length)];
                 break;
-
             case SpawnerType.SeaCreature:
                 prefabToSpawn = GetUnscannedCreaturePrefab();
                 break;
@@ -109,6 +125,8 @@ public class Spawner : MonoBehaviour
         {
             GameObject newObj = Instantiate(prefabToSpawn, spawnPos, Random.rotation);
             _spawnedObjects.Add(newObj);
+
+            Debug.Log($"[Spawner {name}] SUKSES: Spawn {newObj.name} di posisi {spawnPos}");
 
             if (spawnerType == SpawnerType.SeaCreature)
             {

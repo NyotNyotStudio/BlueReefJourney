@@ -17,7 +17,7 @@ public class Healthbar : MonoBehaviour
     {
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
 
-        float difficultyMultiplier = 1f + ((currentLevel - 1) * 0.25f);
+        float difficultyMultiplier = 1f + ((currentLevel - 1) * 0.05f);
         currentDrainSpeed = baseBoostDrainSpeed * difficultyMultiplier;
 
         currentHealth = maxHealth;
